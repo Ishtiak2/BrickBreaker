@@ -14,17 +14,17 @@ A classic **Brick Breaker** game built using **Java** and **Object-Oriented Prog
 - Automatic exit after win/loss
 
 ## 🖼 Screenshot
-![image](https://github.com/user-attachments/assets/f08ee1c3-1273-4b5a-9f2e-2302c118cd79)
-
+![image](https://github.com/user-attachments/assets/ecbc8a57-9717-42cb-ae86-99d96c261a1a)
 
 ## 🛠 Technologies Used
 - Java 8+
+- Java Swing (GUI)
 - IntelliJ IDEA (Community Edition)
 - PNG images for ball, bricks, and background
 - WAV audio file for brick hit sound
 
 ## 📁 Project Structure
-
+```
 Game/
 ├── src/
 │   └── game/
@@ -42,7 +42,7 @@ Game/
 │   ├── background.png
 │   └── hit.wav
 └── README.md
-
+```
 
 ## ▶️ How to Run
 1. Open the project in **IntelliJ IDEA**.
