@@ -6,8 +6,8 @@ import javax.swing.*;
 public class Ball {
     int x, y;
     int diameter = 20;
-    int dx = 2;
-    int dy = -2;
+    int dx = 3;
+    int dy = -4;
     Image ballImage;
 
     public Ball(int x, int y) {
