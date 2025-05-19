@@ -5,11 +5,10 @@ import javax.swing.*;
 public class GameFrame extends JFrame {
     public GameFrame() {
         setTitle("Brick Breaker");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit on close button
         add(new GamePanel());
-        pack();
-        setLocationRelativeTo(null);
+        pack(); // fit the size of the game panel
+        setLocationRelativeTo(null); //centers the window
         setVisible(true);
     }
 }

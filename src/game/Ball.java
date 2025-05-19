@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class Ball {
     int x, y;
-    int diameter = 20;
+    int diameter = 30;
     int dx = 3;
     int dy = -4;
     Image ballImage;
@@ -35,7 +35,7 @@ public class Ball {
 
         if (ballRect.intersects(paddleRect)) {
             dy = -dy;
-            y = paddle.y - diameter;
+            y = paddle.y - diameter; //moves the ball to just above the paddle to prevent the ball from getting "stuck"
         }
 
         brickManager.checkBrickCollision(this);
