@@ -36,7 +36,7 @@ public class BrickManager {
     }
 
     public void checkBrickCollision(Ball ball) {
-        Rectangle ballRect = new Rectangle(ball.x, ball.y, ball.diameter, ball.diameter);
+        Rectangle ballRect = new Rectangle(ball.x, ball.y, ball.getDiameter(), ball.getDiameter());
 
         for (Brick brick : bricks) {
             if (!brick.destroyed && ballRect.intersects(brick.getBounds())) {
