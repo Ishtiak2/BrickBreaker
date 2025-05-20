@@ -30,6 +30,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         timer.start();
     }
 
+    @Override //overrides JPanels method
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(background, 0, 0, WIDTH, HEIGHT, null);
