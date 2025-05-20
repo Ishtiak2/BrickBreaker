@@ -22,14 +22,15 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         addKeyListener(this);
 
         background = new ImageIcon(getClass().getResource("/background.png")).getImage();
-        paddle = new Paddle(WIDTH / 2 - 50, HEIGHT - 40);
-        ball = new Ball(WIDTH / 2 - 10, HEIGHT / 2);
+        paddle = new Paddle(WIDTH / 2 - 50, HEIGHT - 40); // (350,560)
+        ball = new Ball(WIDTH / 2 - 10, HEIGHT / 2); //(390,300)
         brickManager = new BrickManager();
 
-        timer = new Timer(10, this);
+        timer = new Timer(10, this); //used for auto calling methods
         timer.start();
     }
 
+    @Override //overrides JPanels method
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(background, 0, 0, WIDTH, HEIGHT, null);
@@ -56,6 +57,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         }
     }
 
+    //It is called automatically after 10 ms
     public void actionPerformed(ActionEvent e) {
         if (!gameOver && !gameWon) {
             paddle.move();
@@ -87,7 +89,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             score = brickManager.getDestroyedCount() * 10;
         }
 
-        repaint();
+        repaint(); //auto call paintComponent() method
     }
 
 

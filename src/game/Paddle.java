@@ -7,7 +7,7 @@ public class Paddle {
     int x, y;
     int width = 100;
     int height = 10;
-    int speed = 5;
+    int speed = 7;
     int dx = 0;
 
     public Paddle(int x, int y) {
@@ -16,7 +16,7 @@ public class Paddle {
     }
 
     public void draw(Graphics g) {
-        g.setColor(Color.BLUE);
+        g.setColor(Color.RED);
         g.fillRect(x, y, width, height);
     }
 

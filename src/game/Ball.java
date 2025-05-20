@@ -35,7 +35,7 @@ public class Ball {
 
         if (ballRect.intersects(paddleRect)) {
             dy = -dy;
-            y = paddle.y - diameter;
+            y = paddle.y - diameter; //moves the ball to just above the paddle to prevent the ball from getting "stuck"
         }
 
         brickManager.checkBrickCollision(this);
