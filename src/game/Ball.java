@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class Ball {
     int x, y;
-    int diameter = 20;
+    int diameter = 30;
     int dx = 3;
     int dy = -4;
     Image ballImage;

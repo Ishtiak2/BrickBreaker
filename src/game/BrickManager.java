@@ -34,7 +34,6 @@ public class BrickManager {
             brick.draw(g);
         }
     }
-
     public void checkBrickCollision(Ball ball) {
         Rectangle ballRect = new Rectangle(ball.x, ball.y, ball.diameter, ball.diameter);
 
